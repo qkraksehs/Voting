@@ -1,0 +1,85 @@
+/* style.css */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: block;
+    width: 800px;
+    height: 400px;
+}
+
+.banner > h1 {
+    display: block;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 100px;
+}
+
+.banner > h1 > .day {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    animation: day 0.7s ease-in-out 1;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.banner > h1 > .text {
+    animation: text 0.7s ease-in-out 1;
+    opacity: 0;
+    animation-delay: 1.1s;
+    animation-fill-mode: forwards;
+}
+
+.banner .text img {
+    margin-left: 10px;
+}
+
+.banner > img {
+    margin-left: 33px;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    margin-right: 100px;
+    animation: poll 1s ease-in-out 1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.banner {
+    position: relative;
+    background: #282246;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@keyframes day {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }  
+}
+
+@keyframes text {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }  
+}
+
+@keyframes poll {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
